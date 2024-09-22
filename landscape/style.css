@@ -1,0 +1,342 @@
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topofview{
+    position:fixed;
+    width: 100%;
+    margin: 0;
+    top:0;
+    z-index:100;
+    background-color: rgb(241, 229, 212)
+
+}
+
+body{
+    background-color: rgb(241, 229, 212)
+}
+#logo{
+    width: 200px;
+    height:180px;
+    margin:0;
+    padding: 0;
+  
+}
+.heading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  
+    
+}
+.heading p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;  
+    margin:0 25px;  
+}
+.heading h6{
+    
+    font-size: x-large;
+    margin:auto
+}
+
+.headercontact{
+    background-color: rgb(118, 161, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:180px;
+    margin: 0 0;
+    padding: 0;
+}
+.logohead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32%;
+    color: rgb(81, 133, 33);
+    align-items: center;
+   margin: 0;
+   padding: 0;
+    
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 1.5rem;
+    padding: 0;
+    font-size: .75rem;
+
+}
+
+.lists:hover{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    
+
+}
+.navbar li{
+list-style: none;
+color: rgb(81, 133, 33);
+margin-left:5%;
+font-size:.75rem;
+
+}
+
+.herosq{
+  margin-top:15%; 
+  background-color: rgb(241, 229, 212)
+}
+.heropic{
+    width: 80%;
+    height: 650px;
+}
+
+.herotitle{
+    position:absolute;
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    top: 400px;
+    left:840px;
+    color: rgb(132, 150, 132);
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+    padding:10px;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    
+    
+}
+.gallpics{
+    height:350px;
+    width: 450px;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.gallery div{
+        
+    font-size: 2rem;
+    width: 450px;
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h3{
+    padding:0;
+    margin:0;   
+}
+
+.aboutext{
+   
+    margin: 5% 0% 0% 5%;
+    padding: 0;
+    
+}
+
+.aboutext h1{
+    margin: 0;
+}
+.aboutext span{
+    font-weight: 500; 
+    color: rgb(81, 133, 33);}
+
+.about{
+    
+    display: flex;
+    flex-direction: row;
+  
+    height: 500px;
+    width: 95%;
+    background-color: rgb(241, 229, 212);
+    
+}
+
+
+.aboutimg{
+    margin: 10px 0 10px 0 ;
+    padding: 0;
+    width: 50%;
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+       
+}
+
+.secser{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    background-color: rgb(118, 161, 114);
+    color: white;
+    
+ 
+}
+
+.serpics{
+    height: 200px;
+    width: 275px;
+    margin: 0; 
+
+}
+.serpics:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.mainservices{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.freequote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.quoteimg{
+    margin: 10px 0 0 40px;
+    padding: 0;
+    width: 50%;
+}
+
+.quotetext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.quotetext h2{
+    font-size: xx-large;
+    margin: 0 0 30px 0 ;
+    padding: 0;
+
+}
+.quotetext button{
+    margin: 0 0 30px 0;
+    padding: 0;
+    width:20%;
+    height:10%;
+    border-radius: 2%;
+    border: transparent;
+    background-color: rgb(81, 133, 33);
+    color: white;
+}
+.quotetext span{
+    color:rgb(81, 133, 33);
+    font-weight: 500;
+}
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+    */
+
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.testimonial {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.navigation{
+    display:flex;
+    justify-content: space-evenly;
+}
+.navigation button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.navigation button:hover {
+    background-color: #555;
+}
