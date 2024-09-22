@@ -81,8 +81,22 @@ body{
 
 }
 
-.lists:hover{
+
+.lists a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(81, 133, 33) ;
+    
+}
+
+.lists a:hover{
+    background-color: #8b9b33;
+    color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
     cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+
 }
 .navbar{
     display: flex;
@@ -160,15 +174,22 @@ font-size:.75rem;
    
     margin: 5% 0% 0% 5%;
     padding: 0;
+   
     
 }
 
-.aboutext h1{
-    margin: 0;
+.aboutext p{
+    margin:50px 0 0 0 ;
 }
-.aboutext span{
-    font-weight: 500; 
-    color: rgb(81, 133, 33);}
+.aboutext .spangrass{
+    font-weight: 600; 
+    color: rgb(81, 133, 33);
+   
+    margin:10px 0 0 0;
+
+}
+
+
 
 .about{
     
@@ -274,39 +295,43 @@ font-size:.75rem;
     background-color: rgb(81, 133, 33);
     color: white;
 }
+
+.btn:hover{cursor: pointer;
+    background-color: rgb(211, 180, 122);
+ 
+    color:  rgb(81, 133, 33);
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
+    font-size: large;
+    font-weight: 700;
+
+}
 .quotetext span{
     color:rgb(81, 133, 33);
     font-weight: 500;
 }
 
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-    */
 
 .carousel-container {
     width: 100%;
-    max-width: 600px;
     text-align: center;
+    
+    position: relative;
 
 }
 
+.test{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 .testimonial {
-    display: none;
+    height: 75%;
+    width: 50%;
+   display: none;
     background-color: white;
-    padding: 20px;
+    padding: 8%;
+    margin: 5% 0 0 25%;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -315,26 +340,27 @@ body {
     display: block;
 }
 
+.testimonial h4{
+    margin-top: 20px;
+}
+
 .navigation{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
+    position: relative;
+    bottom: 190px;
 }
 .navigation button {
-    background-color: #333;
+    background-color: #8b9b33;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transform: translateY(-50%);
+    transform: translateY(-10%);
     border-radius: 50%;
-}
+    margin:0;
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
 .navigation button:hover {

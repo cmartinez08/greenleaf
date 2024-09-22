@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class = "topofview">
-    <section class="heading">
+    <section class="heading" >
         <div class="logohead">
             <img id="logo"    src="./assets/LOGO.jpg">
-            <h6>Greenleaf Landscaping</h6>
+            <h6>Green Leaf Landscaping</h6>
         </div>
         <div class="headercontact">
         <p>Call Us Now : 123-456-7890</p>
@@ -19,18 +19,18 @@
     </section>
     <nav class="navbar">
         <ul class="lists">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Testimonials</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li> <a href="#servicespro">Services</a></li>
+            <li><a href="#aboutpro">About</a></li>
+            <li><a href="#testimo">Testimonials</a></li>
+            <li><a href="#gall">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
   
     </div>
      <section>
-     <div class="herosq">
+     <div class="herosq"  id="home">
         <div>
            <img  class="heropic" src="./assets/HERO_PIC.jpg"></div>
            <h1 class="herotitle">Beautiful Gardens <br>
@@ -39,7 +39,7 @@
     </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="servicespro">
         <div class="mainservices">
         <div class="secser"><img class="serpics" src="./assets/landscaping" alt="pic"><p>Landscaping</p></div>
         <div class="secser"><img class="serpics" src="./assets/gardenclearance" alt="pic"><p>Garden Work</p></div>
@@ -50,11 +50,12 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="aboutpro">
         <div class="aboutext">
         <h1 class=> Who is Greenleaf  </h1>
-        <span>Grass is Greener Here</span>
-        <p class=>
+        <p class="spangrass">Grass is Greener Here</p>
+        
+        <p>
             GreenLeaf Gardening is committed to transforming outdoor spaces into sustainable,
              eco-friendly havens. We use organic methods to care for your garden, from design 
              to maintenance, ensuring a minimal environmental impact.
@@ -85,25 +86,25 @@
 
     </section>
     <section class="carousel-container">
+
+        <div class="test" id="testimo">
             <div class="testimonial active" >
-        <p>“I'm a testimonial. Click to edit me and add text that says something nice 
-            about you and your services. Let your customers review you and tell their 
-            friends how great you are.  </p>
+                <p>
+
+                    "Green Leaf Landscaping transformed my yard into a stunning oasis! Their team was professional, attentive, and really listened to my vision. The quality of their work is unmatched, and I couldn't be happier with the results!"</p>
             <h4>Mark S</h4>
             </div>
             <div class="testimonial">
-                <p>“I'm a testimonial. Click to edit me and add text that says something nice 
-                    about you and your services. Let your customers review you and tell their 
-                    friends how great you are. </p> 
+
+                <p>"I highly recommend Green Leaf Landscaping! They redesigned my garden, incorporating native plants that thrive in our climate. Their attention to detail and commitment to sustainability truly set them apart. My outdoor space has never looked better!"
+
                     <h4>Sarah M</h4>
                     </div>
                     <div class="testimonial">
-                        <p>“I'm a testimonial. Click to edit me and add text that says something nice 
-                            about you and your services. Let your customers review you and tell their 
-                            friends how great you are.</p>  
+                        <p>"Green Leaf Landscaping did an incredible job on my patio and walkway. Their craftsmanship is excellent, and they completed the project ahead of schedule. I appreciate their dedication to customer satisfaction. I will definitely use them for future projects!"</p>  
                             <h4>Tom Z</h4>
                             </div>
-
+        </div>
      <!-- The navigation buttons -->
      <div class="navigation">
         <button class="prev" onclick="prevTestimonial()">&#10094;</button>
@@ -116,7 +117,7 @@
 
     <section class=>
         <!--gallery of latest works-->
-        <div class="gallery">
+        <div class="gallery" id="gall">
         <div ><h3>Our <br>Latest<br> Work</h3></div>
         <img class="gallpics" src="./assets/img2.jfif">
         <img class="gallpics" src="./assets/img3.jfif">
@@ -125,6 +126,11 @@
         <img class="gallpics" src="./assets/img6.jfif">
 
         </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="ctainer"></div>
     </section>
     <script src="script.js"></script>
 </body>
