@@ -25,7 +25,7 @@ function nextTestimonial() {
 
 // Function to handle opening the form in a new window
 function openForm(serviceName) {
-    window.open(`/form.html?service=${encodeURIComponent(serviceName)}`, '_blank', 'width=600,height=400');
+    window.open(`form.html?service=${encodeURIComponent(serviceName)}`, '_blank', 'width=600,height=400');
 }
 
 // Function to handle setting the service name in the form
