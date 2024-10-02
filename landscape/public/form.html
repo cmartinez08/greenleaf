@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/style.css" rel="stylesheet"/>
+    <title>Service Form</title>
+</head>
+<body class="formback">
+
+    <div id="serviceForm" >
+        <h2 id="serviceTitle"></h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Service Date</label>
+            <input type="date" id="date" name="service date" required><br><br>
+
+            <label for="details">Details:</label><br>
+            <textarea id="details" name="details" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="hideForm()">Close</button>
+        </form>
+    </div>
+    <script src="./script.js">   </script>
+</body>
+</html>

@@ -3,24 +3,35 @@ html{
     margin: 0;
     padding: 0;
 }
+:root{
+    --maingbckgdclr:background-color: rgb(241, 229, 212) ;
+}
 
 * {margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .topofview{
-    position:fixed;
-    width: 100%;
+    
+    width: 100vw;
+   
     margin: 0;
+    position:fixed;
     top:0;
     z-index:100;
-    background-color: rgb(241, 229, 212)
+    background-color: rgb(241, 229, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 body{
     background-color: rgb(241, 229, 212)
 }
+.formback{background-color: rgb(118, 161, 114)}
+
 #logo{
     width: 200px;
     height:180px;
@@ -31,11 +42,11 @@ body{
 .heading{
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     align-items: center;
+    border: solid black 2px;;
   
     
 }
@@ -46,7 +57,7 @@ body{
 }
 .heading h6{
     
-    font-size: x-large;
+    font-size: 1.25rem;
     margin:auto
 }
 
@@ -61,7 +72,7 @@ body{
 }
 .logohead{
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     width: 32%;
     color: rgb(81, 133, 33);
@@ -104,9 +115,14 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    width: 100%;
     
 
 }
+
+
+    
+
 .navbar li{
 list-style: none;
 color: rgb(81, 133, 33);
@@ -121,8 +137,12 @@ font-size:.75rem;
 }
 .heropic{
     width: 80%;
-    height: 650px;
+    height: auto;
 }
+
+
+    
+
 
 .herotitle{
     position:absolute;
@@ -134,21 +154,30 @@ font-size:.75rem;
     color: rgb(132, 150, 132);
 }
 
+
+
+.galsec{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:0;
+}
+
 .gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin:0;
-    padding:10px;
+    padding:5px;
     justify-content: center;
-    width: 100%;
+    width:74%;
     background-color: white;
     
     
 }
 .gallpics{
-    height:350px;
-    width: 450px;
+    height:30vh;
+    width: 40vh;
     margin: 0 ;
     padding: 0;
 
@@ -157,7 +186,7 @@ font-size:.75rem;
 .gallery div{
         
     font-size: 2rem;
-    width: 450px;
+    width: 40vh;
     margin:0;
     padding:0;
     display: flex;
@@ -174,6 +203,7 @@ font-size:.75rem;
    
     margin: 5% 0% 0% 5%;
     padding: 0;
+  
    
     
 }
@@ -208,6 +238,9 @@ font-size:.75rem;
     padding: 0;
     width: 50%;
 }
+
+
+
 
 .services{
   display: flex;
@@ -259,6 +292,8 @@ font-size:.75rem;
     height: 500px;
     width: 100%;
     background-color: white;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -266,6 +301,7 @@ font-size:.75rem;
     margin: 10px 0 0 40px;
     padding: 0;
     width: 50%;
+    
 }
 
 .quotetext{
@@ -365,4 +401,54 @@ font-size:.75rem;
 
 .navigation button:hover {
     background-color: #555;
+}
+
+/*form styles */
+.form  {
+    background-color: green;
+}
+
+
+
+
+        
+        
+        
+   
+   .logohead {
+    margin-bottom: 10px; /* Add spacing between logo and contact section */
+    flex-direction: column;
+  }
+ 
+        
+  @media (max-width:1200px){
+    .heropic{display:none; }
+    .herotitle{font-size: 1.5rem;
+        top:15%;left:50%;
+        z-index: 1000;transform: translate(-50%,-50%);
+        background-color: var(--maingbckgdclr);
+    }
+  }
+
+  
+@media(max-width:700px){
+
+    .test{font-size: .75rem;width: 100%;padding: 0;margin: 0;}
+    .testimonial.active{width: 100%;padding: 20px;margin: 15px;}
+    .carousel-container{display:flex;flex-direction: column;position: relative;}
+    .navigation{transform: none; top: -60px;;}
+    .quoteimg{height: 20vh;width: 75vw;padding: 0;margin: 5%;}
+    .freequote{flex-direction: column;align-items:center;padding: 0;margin: 5%;}
+    .quotetext h2{font-size: 1rem;}
+    .aboutimg{display:none;}
+    .about{display: none;}
+    .heading {flex-direction: column;}
+    .herotitle{top:76%;z-index: 1000;transform: translate(-50%,-50%)}
+    .lists{flex-direction: column;justify-content: center;align-items:flex-start;}
+    .navbar li{margin:0;}
+   
+}
+
+@media(max-width:590px){
+    .herotitle{display:none}
 }

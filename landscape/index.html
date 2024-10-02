@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./public/style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="public/style.css" rel="stylesheet"/>
     <title>Greenleaf</title>
+   
 </head>
 <body>
     <div class = "topofview">
@@ -17,6 +18,7 @@
         <p>Call Us Now : 123-456-7890</p>
         </div>
     </section>
+
     <nav class="navbar">
         <ul class="lists">
             <li><a href="#home">Home</a></li>
@@ -41,13 +43,16 @@
 
     <section class="services" id="servicespro">
         <div class="mainservices">
-        <div class="secser"><img class="serpics" src="./assets/landscaping" alt="pic"><p>Landscaping</p></div>
-        <div class="secser"><img class="serpics" src="./assets/gardenclearance" alt="pic"><p>Garden Work</p></div>
-        <div class="secser"><img class="serpics" src="./assets/lawncare" alt="pic"><p>Lawn Care</p></div>
-        <div class="secser"><img class="serpics" src="./assets/watering" alt="pic"><p>watering</p></div>
-        <div class="secser"><img class="serpics" src="./assets/img8.jfif" alt="pic"><p>Space Renovation</p></div>
-        <div class="secser"><img class="serpics" src="./assets/grass" alt="pic"><p>Grass Installation</p></div>
+        <div class="secser" onclick="openForm('Landscaping')"><img class="serpics" src="./assets/landscaping" alt="pic"><p>Landscaping</p></div>
+        <div class="secser"onclick="openForm('Garden Work')"><img class="serpics" src="./assets/gardenclearance" alt="pic"><p>Garden Work</p></div>
+        <div class="secser"onclick="openForm('Lawn Care')"><img class="serpics" src="./assets/lawncare" alt="pic"><p>Lawn Care</p></div>
+        <div class="secser"onclick="openForm('Watering')"><img class="serpics" src="./assets/watering" alt="pic"><p>watering</p></div>
+        <div class="secser"onclick="openForm('Space Renovation')"><img class="serpics" src="./assets/img8.jfif" alt="pic"><p>Space Renovation</p></div>
+        <div class="secser"onclick="openForm('Grass Installation')"><img class="serpics" src="./assets/grass" alt="pic"><p>Grass Installation</p></div>
         </div>
+
+         
+    
     </section>
 
     <section class="about" id="aboutpro">
@@ -115,7 +120,7 @@
 
 
 
-    <section class=>
+    <section class="galsec">
         <!--gallery of latest works-->
         <div class="gallery" id="gall">
         <div ><h3>Our <br>Latest<br> Work</h3></div>
@@ -132,6 +137,6 @@
     <section id="contact">
         <div class="ctainer"></div>
     </section>
-    <script src="./public/script.js"></script>
+    <script src="public/script.js"></script>
 </body>
 </html>
