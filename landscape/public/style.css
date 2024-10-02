@@ -24,6 +24,7 @@ html{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 
@@ -46,7 +47,7 @@ body{
     margin: 0;
     padding: 0;
     align-items: center;
-    border: solid black 2px;;
+    
   
     
 }
@@ -442,10 +443,14 @@ font-size:.75rem;
     .quotetext h2{font-size: 1rem;}
     .aboutimg{display:none;}
     .about{display: none;}
-    .heading {flex-direction: column;}
-    .herotitle{top:76%;z-index: 1000;transform: translate(-50%,-50%)}
-    .lists{flex-direction: column;justify-content: center;align-items:flex-start;}
-    .navbar li{margin:0;}
+    .heading {flex-direction: column;position: relative;}
+    .herotitle{top:58%;z-index: 1000;transform: translate(-50%,-50%)}
+    .lists{flex-direction: column;justify-content: center;align-items:flex-start;background-color: none;}
+    .navbar li{margin:0;position: relative;background-color: none};
+    .navbar{background-color: none;}
+    .topofview{position: relative;z-index: auto;height: auto;}
+    .headercontact{height: auto;}
+    .herosq{height:25px;margin:0}
    
 }
 
