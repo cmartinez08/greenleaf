@@ -444,7 +444,7 @@ font-size:.75rem;
     .aboutimg{display:none;}
     .about{display: none;}
     .heading {flex-direction: column;position: relative;}
-    .herotitle{top:58%;z-index: 1000;transform: translate(-50%,-50%)}
+    .herotitle{top:39.5%;z-index: 1000;transform: translate(-50%,-50%)}
     .lists{flex-direction: column;justify-content: center;align-items:flex-start;background-color: none;}
     .navbar li{margin:0;position: relative;background-color: none};
     .navbar{background-color: none;}
